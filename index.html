@@ -8,6 +8,11 @@
     <title>John Rhanzel</title>
 
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- CSS Reference -->
     <link rel="stylesheet" href="styles.css">
@@ -16,31 +21,100 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="nav-container">
-        <a href="index.html">
-            <b class="bold-r">R</b>
-        </a>
-        <button type="button" class="resume-btn"><a href="">Resume</a></button>
+        <div class="left-nav">
+            <img src="/assets/Rhanzel Logo Final.svg" alt="Rhanzel logo">
+        </div>
+
+        <div class="right-nav">
+            <a href="#hero-container" class="nav-links">Home</a>
+            <a href="#services" class="nav-links">Services</a>
+            <!-- <a href="index.html" class="nav-links">Projects</a> -->
+            <a href="#contact" class="nav-links">Contact</a>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-container">
+    <section id="hero-container" class="hero-container">
         <div class="left-container">
-            <a href="https://github.com/johnrhanzel" class="links"><img src="" alt="GitHub Icon" class="social-icon"></a>
-            <a href="https://behance.net/johnrhanzel" class="links"><img src="" alt="Behance Icon" class="social-icon"></a>
-            <a href="https://in.com/in/johnrhanzelebora/" class="links"><img src="" alt="LinkedIn Icon" class="social-icon"></a>
-        </div>
+            <div class="first-col">
+                <h1 class="left-header">John Rhanzel Ebora</h1>
+                <p class="left-info">Front-end Developer, UI/UX Designer, and Entrepreneur</p>
+            </div>
 
-        <div class="center-container">
-            <img src="/assets/img/Rhanzel.jpg" alt="Rhanzel image" class="center-profile">
-            <h1 class="center-header">Fullstack Designer</h1>
-            <p class="center-info">Student from the Philippines who aims to contribute to projects and share
-                my knowledge with others.</p>
+            <div class="second-col">
+                <a href="https://in.com/in/johnrhanzelebora/" class="links"><img src="/assets/img/linkedin.svg"
+                        alt="LinkedIn Icon" class="social-icon"></a>
+                <a href="https://github.com/johnrhanzel" class="links"><img src="/assets/img/github.svg"
+                        alt="GitHub Icon" class="social-icon"></a>
+                <a href="https://behance.net/johnrhanzel" class="links"><img src="/assets/img/behance.svg"
+                        alt="Behance Icon" class="social-icon"></a>
+                <a href="https://twitter.com/hellorhanzel" class="links"><img src="/assets/img/twitter.svg"
+                        alt="Twitter Icon" class="social-icon"></a>
+                <a href="https://tiktok.com/hellorhanzel" class="links"><img src="/assets/img/tiktok.svg"
+                        alt="TikTok Icon" class="social-icon"></a>
+                <a href="https://instagram.com/hellorhanzel" class="links"><img src="/assets/img/instagram.svg"
+                        alt="Instagram Icon" class="social-icon"></a>
+            </div>
         </div>
 
         <div class="right-container">
-            <a href="https://twitter.com/hellorhanzel" class="links"><img src="" alt="Twitter Icon" class="social-icon"></a>
-            <a href="https://tiktok.com/hellorhanzel" class="links"><img src="" alt="TikTok Icon" class="social-icon"></a>
-            <a href="https://instagram.com/hellorhanzel" class="links"><img src="" alt="Instagram Icon" class="social-icon"></a>
+            <img src="/assets/img/Rhanzel.jpg" alt="Rhanzel image" class="right-profile">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-container">
+        <h1>Service I Offer</h1>
+
+        <div class="services-column">
+            <div class="services-col">
+                <img src="/assets/img/ux.svg" alt="UI/UX">
+                <h3>UI/UX Design</h3>
+                <p>Designing diverse user interfaces, problem-solving, and providing value to end-users.</p>
+            </div>
+
+            <div class="services-col">
+                <img src="/assets/img/web development.svg" alt="website">
+                <h3>Website</h3>
+                <p>Create simple and user-friendly websites for users and clients that boost brand identity and market.
+                </p>
+            </div>
+
+            <div class="services-col">
+                <img src="/assets/img/photo editing.svg" alt="Photo Editing">
+                <h3>Photo Editing</h3>
+                <p>Edit images into stunning and vibrant ones, which will make everyone focus on you as they browse.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-container">
+        <div class="contact-first">
+            <div class="contactfirst-cols">
+                <h3>Glad to connect with you!</h3>
+                <p>Feel free to discuss any projects, collaborations or something you want to share.</p>
+            </div>
+
+            <div class="contactsecond-cols">
+                <h3>Email me at</h3>
+                <p>johnrhanzeleb@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="contact-second">
+            <form action="">
+                <label for="name">Name</label> <br>
+                <input type="text" name="name" id="name"> <br> <br>
+
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" id="email"> <br> <br>
+
+                <label for="message">Message</label> <br>
+                <textarea name="message" id="message"></textarea> <br> <br>
+                
+                <button type="submit" id="send-btn">Send</button>
+            </form>
         </div>
     </section>
 
