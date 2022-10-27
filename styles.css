@@ -200,6 +200,7 @@ html {
 }
 
 #name, #email, #message{
+    width: 100%;
     width: 50em;
     height: 2em;
 }
@@ -237,8 +238,7 @@ html {
     }
 
     #name, #email, #message{
-        width: 100%;
-        max-width: 30em;
+        width: 80vw;
         height: 2em;
     }
 
