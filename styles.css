@@ -89,7 +89,7 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 5em 3em 5em 3em;
+    padding: 7em 5em 7em 5em;
     height: auto;
 }
 
@@ -133,7 +133,7 @@ html {
 /* Services Section */
 .services-container{
     height: auto;
-    padding: 7em 3em 7em 3em;
+    padding: 7em 5em 7em 5em;
 }
 
 .services-container h1{
@@ -169,7 +169,7 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 7em 3em 7em 3em;
+    padding: 6em 4em 5em 4em;
     height: auto;
 }
 
