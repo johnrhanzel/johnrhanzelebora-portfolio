@@ -19,9 +19,9 @@
 
     <!-- JavaScript Reference for Contact Form -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">      (function () {
-            emailjs.init("BudGDbJ310yXSpZcA");
-        })();
+
+    <script type="text/javascript">
+        emailjs.init('BudGDbJ310yXSpZcA')
     </script>
 </head>
 
@@ -107,20 +107,24 @@
             </div>
         </div>
 
-        <div class="contact-second">
-            <form id="contactForm">
-                <label for="name">Name</label> <br>
-                <input type="text" name="name" id="name"> <br> <br>
-
-                <label for="email">Email</label> <br>
-                <input type="email" name="email" id="email"> <br> <br>
-
-                <label for="message">Message</label> <br>
-                <textarea name="message" id="message"></textarea> <br> <br>
-
-                <button type="submit" id="sendBtn">Send</button>
+        <form id="form">
+            <form id="form">
+                <div class="field">
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" id="email" required>
+                  </div>
+                <div class="field">
+                    <label for="name">Name</label> <br>
+                    <input type="text" name="name" id="name" required>
+                  </div>
+                  <div class="field">
+                    <label for="message">Message</label> <br>
+                    <input type="text" name="message" id="message" required>
+                  </div>
+                
+                  <input type="submit" id="button" value="Send" >
             </form>
-        </div>
+            </div>
     </section>
 
     <!-- Footer Section -->
@@ -131,26 +135,25 @@
 
     <!-- JavaScript -->
     <script>
-        // listen to the form submission
-        document
-            .getElementById("contactorm")
-            .addEventListener("sendBtn", function (event) {
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
                 event.preventDefault();
 
-                const serviceID = "service_3tuap0p";
-                const templateID = "template_ecwo4re";
+                btn.value = 'Sending...';
 
-                // send the email here
-                emailjs.sendForm("service_3tuap0p", "template_ecwo4re", "#contactForm").then(
-                    (response) => {
-                        console.log("SUCCESS!", response.status, response.text);
-                        alert("SUCCESS!");
-                    },
-                    (error) => {
-                        console.log("FAILED...", error);
-                        alert("FAILED...", error);
-                    }
-                );
+                const serviceID = 'default_service';
+                const templateID = 'template_ecwo4re';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Sent!');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
             });
     </script>
 </body>
