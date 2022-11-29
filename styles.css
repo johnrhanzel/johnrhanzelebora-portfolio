@@ -118,6 +118,7 @@ html {
 }
 
 .social-icon:hover{
+    width: 100%;
     border: 2px solid #97D2EC;
     border-radius: auto;
 }
@@ -203,8 +204,8 @@ html {
     padding-bottom: 1.2em;
 }
 
-label{
-    padding-bottom: 1em;
+input[type=text]{
+    padding-left: 0.3em;
 }
 
 #name, #email, #message{
@@ -215,6 +216,8 @@ label{
 
 #message{
     height: 10em;
+    width: 100%;
+    width: 41.6em;
 }
 
 #button{
@@ -252,5 +255,7 @@ label{
 
     #message{
         height: 10em;
+        width: 100%;
+        width: 41.6em;
     }
 }
