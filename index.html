@@ -148,10 +148,10 @@
 
                 emailjs.sendForm(serviceID, templateID, this)
                     .then(() => {
-                        btn.value = 'Send Email';
+                        btn.value = 'Re-send';
                         alert('Sent!');
                     }, (err) => {
-                        btn.value = 'Send Email';
+                        btn.value = 'Error';
                         alert(JSON.stringify(err));
                     });
             });
