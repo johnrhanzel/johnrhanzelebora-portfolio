@@ -23,9 +23,6 @@
             emailjs.init("BudGDbJ310yXSpZcA");
         })();
     </script>
-    <script>
-        emailjs.sendForm("service_3tuap0p", "template_ecwo4re", "#contact-form")
-    </script>
 </head>
 
 <body>
@@ -136,7 +133,7 @@
     <script>
         // listen to the form submission
         document
-            .getElementById("contactForm")
+            .getElementById("contactorm")
             .addEventListener("sendBtn", function (event) {
                 event.preventDefault();
 
@@ -144,7 +141,7 @@
                 const templateID = "template_ecwo4re";
 
                 // send the email here
-                emailjs.sendForm(serviceID, templateID, this).then(
+                emailjs.sendForm("service_3tuap0p", "template_ecwo4re", "#contactForm").then(
                     (response) => {
                         console.log("SUCCESS!", response.status, response.text);
                         alert("SUCCESS!");
