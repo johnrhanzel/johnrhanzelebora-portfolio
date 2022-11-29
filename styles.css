@@ -199,6 +199,14 @@ html {
     font-weight: 600;
 }
 
+.field{
+    padding-bottom: 1.2em;
+}
+
+label{
+    padding-bottom: 1em;
+}
+
 #name, #email, #message{
     width: 100%;
     width: 50em;
@@ -209,7 +217,7 @@ html {
     height: 10em;
 }
 
-#sendBtn{
+#button{
     background-color: #97D2EC;
     border: none;
     border-radius: .2em;
@@ -217,7 +225,7 @@ html {
     height: 3em;
 }
 
-#sendBtn:hover{
+#button:hover{
     border: 1px solid #000;
     background-color: #06283D;
     color: #fff;
