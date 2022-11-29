@@ -209,7 +209,7 @@ html {
     height: 10em;
 }
 
-#send-btn{
+#sendBtn{
     background-color: #97D2EC;
     border: none;
     border-radius: .2em;
@@ -217,7 +217,7 @@ html {
     height: 3em;
 }
 
-#send-btn:hover{
+#sendBtn:hover{
     border: 1px solid #000;
     background-color: #06283D;
     color: #fff;
