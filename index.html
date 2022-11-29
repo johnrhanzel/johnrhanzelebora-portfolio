@@ -110,7 +110,7 @@
         </div>
 
         <div class="contact-second">
-            <form action="index.html" method="post" id="contact-form">
+            <form id="contact-form">
                 <label for="name">Name</label> <br>
                 <input type="text" name="name" id="name"> <br> <br>
 
@@ -120,7 +120,7 @@
                 <label for="message">Message</label> <br>
                 <textarea name="message" id="message"></textarea> <br> <br>
 
-                <button type="submit" id="send-btn">Send</button>
+                <button type="submit" id="sendBtn">Send</button>
             </form>
         </div>
     </section>
@@ -134,7 +134,7 @@
     <!-- JavaScript -->
     <script type="text/javascript">
         window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+            document.getElementById('contact-form').addEventListener('sendBtn', function(event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
