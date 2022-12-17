@@ -218,7 +218,7 @@ input[type=text]{
 #message{
     height: 10em;
     width: 100%;
-    max-width: 41.6em;
+    max-width: 50em;
 }
 
 #button{
@@ -244,6 +244,21 @@ input[type=text]{
 
 /* Media for Mobile and Tablet */
 @media screen and (max-width: 768px) {
+    .nav-container{
+        padding: 1em;
+    }
+    .hero-container{
+        padding: 1.5em;
+    }
+    
+    .services-container{
+        padding: 1.5em;
+    }
+
+    .contact-container{
+        padding: 1.5em;
+    }
+
     .services-column{
         display: flex;
         flex-flow: column wrap;
