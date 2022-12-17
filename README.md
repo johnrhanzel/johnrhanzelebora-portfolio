@@ -1,7 +1,6 @@
-# iCreate-Portfolio
+# John Rhanzel Ebora Portfolio
  
 <h3>Check the portfolio by clicking the link below</h3>
-<p>🔗 https://johnrhanzel.github.io/iCreate-Portfolio/</p>
 
 <h3>What did I use?</h3>
 <li>HTML</li>
