@@ -164,6 +164,7 @@ html {
 .services-column p{
     font-weight: 400;
     text-align: justify;
+    max-width: 20em;
 }
 
 /* Contact Section */
