@@ -16,10 +16,6 @@ html {
     overflow-y: auto;
     background-color: #F9F9F9;
     scroll-behavior: smooth;
-    /* background-image: url(./assets/img/animoticon.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 /* Navigation */
@@ -89,9 +85,13 @@ html {
 .hero-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 7em 5em 7em 5em;
     height: auto;
+    background-image: url(./assets/img/hero\ background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .left-container {
@@ -118,7 +118,7 @@ html {
     max-width: 2.5em;
 }
 
-.social-icon:hover{
+.social-icon:hover {
     width: 100%;
     border: 2px solid #97D2EC;
     border-radius: auto;
@@ -133,42 +133,102 @@ html {
 }
 
 /* Services Section */
-.services-container{
+.services-container {
     height: auto;
     padding: 7em 5em 7em 5em;
 }
 
-.services-container h1{
+.services-container h1 {
     font-weight: 700;
     font-size: 2em;
 }
 
-.services-column{
+.services-column {
     display: grid;
     grid-auto-flow: column dense;
     gap: 6em;
     padding: 5em 0 5em 0;
 }
 
-.services-container img{
+.services-col {
+    max-width: 15em;
+    height: 10em;
+}
+
+.services-container img {
     width: 100%;
     max-width: 4em;
     height: auto;
 }
 
-.services-column h3{
+.services-column h3 {
     font-weight: 700;
     font-size: 1.3em;
 }
 
-.services-column p{
+.services-column p {
     font-weight: 400;
     text-align: justify;
     max-width: 20em;
 }
 
+/* Projects Section */
+.projects-container {
+    background-image: url(./assets/img/hero\ background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2em 2em 2em 4em;
+}
+
+.projects-container h1 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2em;
+}
+
+.projects-cards img {
+    width: 100%;
+    height: fit-content;
+}
+
+.top-card {
+    border: 1px solid #000;
+    height: 35em;
+    width: auto;
+}
+
+.top-card:hover {
+    transform: scale(1) rotate(2deg);
+    border: 2px solid #97D2EC;
+}
+
+.top-links {
+    text-decoration: none;
+    color: #242024;
+}
+
+.top-links p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #242024;
+}
+
+.top-links img {
+    max-height: 30em;
+}
+
 /* Contact Section */
-.contact-container{
+.contact-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -176,53 +236,55 @@ html {
     height: auto;
 }
 
-.contact-first{
+.contact-first {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 
-.contactfirst-cols h3{
+.contactfirst-cols h3 {
     font-weight: 700;
     font-size: 2em;
 }
 
-.contactfirst-cols p{
+.contactfirst-cols p {
     font-weight: 400;
     text-align: justify;
     padding-top: 1em;
 }
 
-.contactsecond-cols h3{
+.contactsecond-cols h3 {
     font-weight: 400;
     font-size: 1em;
 }
 
-.contactsecond-cols p{
+.contactsecond-cols p {
     font-weight: 600;
 }
 
-.field{
+.field {
     padding-bottom: 1.2em;
 }
 
-input[type=text]{
+input[type=text] {
     padding-left: 0.3em;
 }
 
-#name, #email, #message{
+#name,
+#email,
+#message {
     width: 100%;
     width: 50em;
     height: 2em;
 }
 
-#message{
+#message {
     height: 10em;
     width: 100%;
     max-width: 50em;
 }
 
-#button{
+#button {
     background-color: #97D2EC;
     border: none;
     border-radius: .2em;
@@ -230,7 +292,7 @@ input[type=text]{
     height: 3em;
 }
 
-#button:hover{
+#button:hover {
     border: 1px solid #000;
     background-color: #06283D;
     color: #fff;
@@ -245,32 +307,35 @@ input[type=text]{
 
 /* Media for Mobile and Tablet */
 @media screen and (max-width: 768px) {
-    .nav-container{
+    .nav-container {
         padding: 1em;
     }
-    .hero-container{
-        padding: 1.5em;
-    }
-    
-    .services-container{
+
+    .hero-container {
         padding: 1.5em;
     }
 
-    .contact-container{
+    .services-container {
         padding: 1.5em;
     }
 
-    .services-column{
+    .contact-container {
+        padding: 1.5em;
+    }
+
+    .services-column {
         display: flex;
         flex-flow: column wrap;
     }
 
-    #name, #email, #message{
+    #name,
+    #email,
+    #message {
         width: 80vw;
         height: 2em;
     }
 
-    #message{
+    #message {
         height: 10em;
         width: 100%;
         max-width: 41.6em;
