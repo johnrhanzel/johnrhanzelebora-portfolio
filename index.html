@@ -23,6 +23,9 @@
     <script type="text/javascript">
         emailjs.init('BudGDbJ310yXSpZcA')
     </script>
+
+    <!-- Ko-fi Widget -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 </head>
 
 <body>
@@ -112,17 +115,17 @@
                 <div class="field">
                     <label for="email">Email</label> <br>
                     <input type="text" name="email" id="email" required>
-                  </div>
+                </div>
                 <div class="field">
                     <label for="name">Name</label> <br>
                     <input type="text" name="name" id="name" required>
-                  </div>
-                  <div class="field">
+                </div>
+                <div class="field">
                     <label for="message">Message</label> <br>
                     <textarea name="message" id="message" required></textarea>
-                  </div>
-                
-                  <input type="submit" id="button" value="Send" >
+                </div>
+
+                <input type="submit" id="button" value="Send">
             </form>
             </div>
     </section>
@@ -155,6 +158,14 @@
                         alert(JSON.stringify(err));
                     });
             });
+
+        kofiWidgetOverlay.draw('hellorhanzel', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support me',
+            'floating-chat.donateButton.background-color': '#323842',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+
     </script>
 </body>
 
